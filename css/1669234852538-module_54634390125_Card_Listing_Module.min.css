@@ -1,0 +1,189 @@
+.card-listing-module {
+    background-position: 50% !important;
+    background-size: cover !important;
+    overflow: hidden;
+    padding: 50px 0
+}
+
+.card-listing-module .title-wrapper {
+    margin-bottom: 25px;
+    width: 100%
+}
+
+.card-listing-module h2 {
+    font-size: 48px;
+    line-height: 67px
+}
+
+.card-listing-module .title {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.card-listing-module .content .buttons,
+.card-listing-module .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.card-listing-module .wrapper .content {
+    height: 27vw;
+    width: 100%
+}
+
+.card-listing-module .wrapper .content img {
+    border-radius: 16px 16px 0 0
+}
+
+.card-listing-module .wrapper .content h1,
+.card-listing-module .wrapper .content h2,
+.card-listing-module .wrapper .content h3,
+.card-listing-module .wrapper .content h4,
+.card-listing-module .wrapper .content h5,
+.card-listing-module .wrapper .content h6,
+.card-listing-module .wrapper .content p {
+    color: #102b27
+}
+
+.card-listing-module .wrapper img {
+    height: auto;
+    max-width: 100%
+}
+
+.card-listing-module .wrapper .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.card-listing-module .wrapper .content img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%
+}
+
+.card-listing-module .wrapper .col>a .arrow img,
+.card-listing-module .wrapper .content img {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s
+}
+
+.card-listing-module .wrapper .col>a:hover .arrow img {
+    transform: translate(5px) !important
+}
+
+.card-listing-module .wrapper .col>a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%
+}
+
+.card-listing-module .wrapper .col .title {
+    align-items: center;
+    background: #fff;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 4px 8px rgb(0 0 8/8%);
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 24px 40px;
+    position: relative;
+    width: 100%
+}
+
+.card-listing-module .wrapper .col .title .arrow {
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10px;
+    vertical-align: middle
+}
+
+.card-listing-module .title p:last-child {
+    margin-bottom: 0
+}
+
+.card-listing-module h2 {
+    line-height: 1.4;
+    margin-bottom: 32px
+}
+
+.card-listing-module .wrapper a {
+    color: #2c71f0
+}
+
+.card-listing-module .wrapper .col .title {
+    color: #2c71f0;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.36
+}
+
+@media only screen and (max-width:767px) {
+    .card-listing-module .wrapper .content {
+        height: 91vw
+    }
+
+    .card-listing-module h2 {
+        font-size: 40px !important;
+        line-height: 56px !important
+    }
+
+    .card-listing-module .wrapper .col .title {
+        padding: 20px 40px
+    }
+
+    .card-listing-module .wrapper .col {
+        margin-bottom: 70px !important
+    }
+
+    .card-listing-module .wrapper .col .title {
+        background-color: #fff;
+        border-radius: 16px;
+        bottom: -6%;
+        box-shadow: 0 4px 8px 0 #00000814;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+        padding: 16px;
+        position: absolute;
+        right: 0;
+        top: auto
+    }
+
+    .card-listing-module .wrapper .col>a {
+        position: relative
+    }
+
+    .card-listing-module .wrapper .col .title .arrow {
+        display: none
+    }
+
+    .card-listing-module .wrapper .col .title {
+        color: #15357a;
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 155%;
+        text-align: center
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .card-listing-module .wrapper .col .title {
+        bottom: -12%
+    }
+}

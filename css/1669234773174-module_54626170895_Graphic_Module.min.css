@@ -1,0 +1,237 @@
+.graphic-module {
+    background-position: 50% !important;
+    background-size: cover !important;
+    padding: 50px 0
+}
+
+.graphic-module h2 {
+    color: #15357a;
+    line-height: 1.4
+}
+
+.graphic-module p {
+    line-height: 27px
+}
+
+.graphic-module .gr-col {
+    align-items: center;
+    background-size: cover !important;
+    border-radius: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 30px;
+    min-height: 750px;
+    padding-bottom: 0;
+    width: 100%
+}
+
+.graphic-module .gr-col .content {
+    border-radius: 16px;
+    margin-left: -70px;
+    margin-top: 0;
+    max-width: 500px
+}
+
+.graphic-module .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.graphic-module .wrapper .content {
+    width: 100%
+}
+
+.graphic-module .wrapper img {
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgb(0 0 8/8%);
+    height: auto;
+    max-width: 100%
+}
+
+.graphic-module .wrapper .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.graphic-module p {
+    color: #15357a;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.55
+}
+
+.graphic-module .btn-text {
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%
+}
+
+.graphic-module .btn-text:after {
+    align-items: center;
+    flex-wrap: wrap;
+    height: 24px
+}
+
+.graphic-module.graphic-widget_1631523207606 .gr-col .content img {
+    box-shadow: none
+}
+
+.graphic-module-wrapper-section {
+    margin-left: 0px;
+    padding: 0 32px
+}
+
+@media only screen and (max-width:1440px) {
+    .graphic-module .js__width {
+        margin: 0 auto !important;
+        max-width: 1440px;
+        padding: 0 0 0 32px
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .graphic-module .js__width {
+        padding-left: 16px;
+        padding-right: 16px
+    }
+
+    .graphic-module-wrapper-section {
+        margin-left: 0;
+        padding: 0
+    }
+
+    .graphic-module .wrapper,
+    graphic-module .wrapper .col {
+        margin-left: 0;
+        margin-right: 0
+    }
+}
+
+.graphic-module p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.72
+}
+
+@media only screen and (max-width:998px) {
+    .graphic-module .col {
+        width: calc(100% - 20px) !important
+    }
+
+    .graphic-module .wrapper {
+        flex-direction: column-reverse
+    }
+
+    .graphic-module .gr-col {
+        align-items: flex-start;
+        margin-bottom: 40px;
+        margin-left: 0;
+        margin-top: 30px
+    }
+
+    .graphic-module .gr-col .content {
+        margin-left: 0;
+        margin-top: -70px;
+        max-width: 90%
+    }
+
+    .graphic-module .wrapper .content.left {
+        max-width: 100% !important
+    }
+
+    .graphic-module .gr-col {
+        padding-bottom: 150px
+    }
+
+    .graphic-module h2 {
+        line-height: 40px
+    }
+
+    .graphic-module.graphic-widget_1631523207606 .gr-col .content {
+        max-width: 320px
+    }
+
+    .graphic-module .gr-col .content {
+        padding-left: 32px;
+        margin: auto;
+    }
+
+    .home-banner-v2 h2,
+    .graphic-module h2 {
+        font-size: 42px !important;
+        font-weight: 700;
+    }
+
+    .graphic-module .gr-col {
+        margin-bottom: 25px
+    }
+
+    .graphic-module.graphic-widget_1630919656097 .gr-col .content {
+        max-width: 340px
+    }
+
+    .graphic-module.graphic-widget_1631522957161 .gr-col .content {
+        max-width: 320px
+    }
+
+    .graphic-module .gr-col {
+        min-height: 250px;
+        padding-bottom: 42px
+    }
+}
+
+@media only screen and (max-width:767px) {
+
+    .home-banner-v2 h2,
+    .graphic-module h2 {
+        line-height: 32px
+    }
+
+    .graphic-module.graphic-widget_1631523207606 .gr-col .content {
+        max-width: 75%;
+    }
+
+    .graphic-module .gr-col .content {
+        padding-left: 22px;
+        padding: 15px;
+    }
+
+    .home-banner-v2 h2,
+    .graphic-module h2 {
+        font-size: 32px !important;
+        font-weight: 700;
+        line-height: 1.4
+    }
+
+    .graphic-module .gr-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px
+    }
+
+    .graphic-module.graphic-widget_1630919656097 .gr-col .content {
+        max-width: 280px
+    }
+
+    .graphic-module.graphic-widget_1631522957161 .gr-col .content {
+        max-width: 225px
+    }
+
+    .graphic-module .gr-col {
+        min-height: 250px;
+        padding-bottom: 42px
+    }
+
+    .graphic-module p:last-child {
+        margin: 0
+    }
+}

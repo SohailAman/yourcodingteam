@@ -1,0 +1,114 @@
+.bg-content-module {
+    background-position: 50% !important;
+    background-size: cover !important;
+    padding: 48px 0
+}
+
+.bg-content-module h2 {
+    font-size: 48px;
+    line-height: 67px
+}
+
+.bg-content-module p {
+    font-size: 16px;
+    line-height: 27px
+}
+
+.bg-content-module .full-width {
+    width: 100%
+}
+
+.bg-content-module .wrapper {
+    background-position: 50% !important;
+    background-size: cover !important;
+    border-radius: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 69px 69px
+}
+
+.bg-content-module .wrapper .cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px
+}
+
+.bg-content-module .wrapper .cont .cont-left {
+    margin-right: 15px
+}
+
+.bg-content-module .wrapper .cont .cont-right {
+    margin-left: 15px
+}
+
+.bg-content-module .wrapper .content {
+    border-radius: 12px;
+    padding: 50px;
+    width: 100%
+}
+
+.bg-content-module .wrapper img {
+    height: auto;
+    max-width: 100%
+}
+
+.bg-content-module .wrapper .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap
+}
+
+@media only screen and (max-width:979px) {
+    .bg-content-module .wrapper {
+        padding: 100px 50px 80px
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .bg-content-module .wrapper .cont {
+        flex-wrap: wrap
+    }
+
+    .bg-content-module .wrapper .cont .cont-left,
+    .bg-content-module .wrapper .cont .cont-right {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%
+    }
+
+    .bg-content-module .wrapper .content {
+        padding: 50px 25px
+    }
+
+    .bg-content-module h2 {
+        font-size: 32px !important;
+        line-height: 1.4
+    }
+
+    .bg-content-module .wrapper {
+        padding: 100px 24px 24px
+    }
+}
+
+@media only screen and (max-width:479px) {
+    .bg-content-module h1 {
+        font-size: 42px !important
+    }
+
+    .bg-content-module h2 {
+        font-size: 32px !important;
+        line-height: 1.4
+    }
+
+    .bg-content-module h3 {
+        font-size: 24px !important
+    }
+
+    .bg-content-module p {
+        font-size: 16px !important
+    }
+}
