@@ -73,7 +73,7 @@
 }
 
 .menu__section-header-title {
-    color: #15357a;
+    color: #808080;
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
@@ -102,7 +102,7 @@
 }
 
 .menu__link-text {
-    color: #15357a;
+    color: #808080;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px
@@ -154,7 +154,7 @@
 .navbar-item__button-default:hover {
     background: #eaf1fe;
     border: 1px solid transparent;
-    color: #15357a;
+    color: #808080;
     font-weight: 500
 }
 
@@ -242,12 +242,12 @@
 }
 
 .drawer__close-icon {
-    color: #15357a
+    color: #808080
 }
 
 .drawer__back-button {
     align-items: center;
-    color: #15357a;
+    color: #808080;
     -webkit-column-gap: 8px;
     -moz-column-gap: 8px;
     column-gap: 8px;
@@ -330,7 +330,7 @@
 }
 
 .drawer-item__text {
-    color: #15357a;
+    color: #808080;
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
@@ -338,7 +338,7 @@
 }
 
 .drawer-item__chevron {
-    color: #15357a;
+    color: #808080;
     -webkit-transform: rotate(270deg);
     transform: rotate(270deg)
 }
@@ -442,7 +442,7 @@
 .navigation-bar__container.navigation-bar__desktop:hover .navbar-item__button-default,
 .navigation-bar__container.navigation-bar__desktop:hover .navbar-item__chevron,
 .navigation-bar__container.navigation-bar__desktop:hover .navigation-bar__hamburger-menu-icon {
-    color: #15357a
+    color: #808080
 }
 
 .navigation-bar__container .navbar-item__active .navbar-item__button-outlined,
@@ -490,7 +490,8 @@
 }
 
 .navigation-bar a {
-    text-decoration: none
+    text-decoration: none;
+    color: #fbb31c !important;
 }
 
 .navigation-bar button {
@@ -518,11 +519,22 @@
     display: none;
     color: #fff;
     text-decoration: line-through;
-    width: 100%;
+    width: fit-content;
+    position: relative;
 }
 
-.navigation-bar__right-container .logo-small-view button {
-    background: transparent;
+.navigation-bar__right-container #closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    display: none;
 }
 
 header .navbar-toggler {
@@ -557,10 +569,12 @@ header .sm-slider {
 }
 
 @media (max-width:778px) {
+
     .navigation-bar__container.navigation-bar__desktop:hover .navbar-item__button-default {
         color: #fff !important;
     }
 
+    .navigation-bar__right-container #closeBtn,
     header .navbar-toggler {
         display: block;
     }
@@ -578,7 +592,6 @@ header .sm-slider {
     .navigation-bar__right-container .logo-small-view {
         text-align: center !important;
         display: flex;
-        align-items: center;
         justify-content: space-between;
         padding: 15px;
     }
@@ -588,7 +601,7 @@ header .sm-slider {
     }
 
     .navigation-bar__right-container {
-        width: 320px;
+        width: 420px;
         position: fixed;
         left: 0;
         top: 0;
@@ -599,7 +612,7 @@ header .sm-slider {
         justify-content: start !important;
         align-items: flex-start;
         padding: 60px 30px auto 10px;
-        background-color: #1b1b1b;
+        background-color: #808080;
     }
 
     .navigation-bar__right-container .navbar-item__container {
@@ -614,7 +627,24 @@ header .sm-slider {
 }
 
 @media (max-width:480px) {
+    .navigation-bar__left-container a img {
+        width: 200px !important;
+    }
+
+    header .navbar-toggler .icon-bar {
+        display: block;
+        height: 3px;
+        width: 24px;
+    }
+
+
     .navigation-bar__right-container {
         width: 100vw !important;
+    }
+
+    .navigation-bar__right-container #closeBtn {
+        width: 30px;
+        height: 30px;
+        font-size: 12px !important;
     }
 }

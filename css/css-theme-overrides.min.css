@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    color: #15357a;
+    color: #808080;
     font-family: sans-serif;
     font-weight: 400;
     overflow-x: hidden
@@ -34,7 +34,7 @@ p {
 }
 
 a {
-    color: #0270e0;
+    color: #fdb11f;
     font-weight: 400
 }
 
@@ -46,7 +46,7 @@ h1 {
 }
 
 h1 {
-    color: #15357a;
+    color: #808080;
     font-size: 64px;
     line-height: 1.1
 }
@@ -97,7 +97,7 @@ h2.sml {
 
 .lrg-text,
 h3 {
-    color: #15357a;
+    color: #808080;
     font-family: sans-serif, serif;
     font-size: 24px;
     font-style: normal;
@@ -121,7 +121,7 @@ h4 {
 
 h4,
 h5 {
-    color: #15357a;
+    color: #808080;
     font-style: normal;
     font-weight: 400;
     margin-bottom: 10px;
@@ -141,7 +141,7 @@ h6 {
 }
 
 h6 {
-    color: #15357a;
+    color: #808080;
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
@@ -159,8 +159,8 @@ blockquote {
 .button,
 .common-cta a,
 button {
-    background-color: #2c71f0;
-    border: 2px #2c71f0;
+    background-color: #fbb31d;
+    border: 2px #fbb31d;
     border-radius: 40px;
     color: #fff;
     display: inline-block;
@@ -208,7 +208,7 @@ button:active {
 
 .transparent-btn a {
     background: transparent;
-    color: #2c71f0;
+    color: #fbb31d;
     padding: 0;
     position: relative
 }
@@ -239,7 +239,7 @@ form {
 
 form label,
 form legend {
-    color: #15357a
+    color: #808080
 }
 
 form input[type=email],
@@ -251,45 +251,45 @@ form input[type=text],
 form select,
 form textarea {
     border-radius: 3px;
-    color: #15357a
+    color: #808080
 }
 
 ::-webkit-input-placeholder {
-    color: #15357a
+    color: #808080
 }
 
 ::-moz-placeholder {
-    color: #15357a
+    color: #808080
 }
 
 :-ms-input-placeholder {
-    color: #15357a
+    color: #808080
 }
 
 ::placeholder {
-    color: #15357a
+    color: #808080
 }
 
 .hs-fieldtype-date .input .hs-dateinput:before {
-    color: #15357a
+    color: #808080
 }
 
 .fn-date-picker td.is-selected .pika-button {
-    background: #15357a
+    background: #808080
 }
 
 .fn-date-picker td .pika-button:hover {
-    background-color: #15357a !important
+    background-color: #808080 !important
 }
 
 .fn-date-picker td.is-today .pika-button {
-    color: #15357a
+    color: #808080
 }
 
 form .hs-button,
 form input[type=submit] {
-    background-color: #2c71f0;
-    border: 2px #2c71f0;
+    background-color: #fbb31d;
+    border: 2px #fbb31d;
     border-radius: 40px;
     color: #fff;
     font-family: sans-serif;
@@ -316,36 +316,36 @@ form input[type=submit]:active {
 
 table {
     background-color: #fff;
-    border: 1px solid #15357a
+    border: 1px solid #808080
 }
 
 td,
 th {
     border: 1px solid;
-    color: #15357a;
+    color: #808080;
     padding: 18px
 }
 
 thead th {
-    background-color: #15357a;
+    background-color: #808080;
     color: #fff
 }
 
 tfoot td {
     background-color: #fff;
-    color: #15357a
+    color: #808080
 }
 
 .header__language-switcher .lang_list_class li a,
 .header__language-switcher-label-current,
 .header__logo .logo-company-name,
 .menu__link {
-    color: #15357a;
+    color: #808080;
     font-family: sans-serif
 }
 
 .menu__child-toggle-icon {
-    border-top-color: #15357a
+    border-top-color: #808080
 }
 
 .header__language-switcher .lang_list_class li a:focus,
@@ -373,7 +373,7 @@ tfoot td {
 }
 
 .menu .menu__item--depth-1>.menu__link--active-link:after {
-    background-color: #15357a
+    background-color: #808080
 }
 
 @media (min-width:767px) {
@@ -382,7 +382,7 @@ tfoot td {
     .menu .menu__submenu,
     .menu__submenu--level-2>.menu__item:first-child:before {
         background-color: #fff;
-        border: 2px solid #15357a
+        border: 2px solid #808080
     }
 }
 
@@ -390,7 +390,7 @@ tfoot td {
 .menu__submenu .menu__link:focus,
 .menu__submenu .menu__link:hover {
     background-color: #fff;
-    color: #15357a
+    color: #808080
 }
 
 .header__language-switcher .lang_list_class li:hover,
@@ -411,7 +411,7 @@ tfoot td {
 }
 
 .header__language-switcher-label-current:after {
-    border-top-color: #15357a
+    border-top-color: #808080
 }
 
 @media(max-width:767px) {
@@ -421,7 +421,7 @@ tfoot td {
 
     .header__navigation-toggle svg,
     .menu-arrow svg {
-        fill: #15357a
+        fill: #808080
     }
 }
 
@@ -440,7 +440,7 @@ tfoot td {
 .footer li,
 .footer p,
 .footer span {
-    color: #15357a
+    color: #808080
 }
 
 .blog-header__inner,
@@ -451,7 +451,7 @@ tfoot td {
 
 .blog-post__meta a,
 .blog-post__tag-link {
-    color: #15357a
+    color: #808080
 }
 
 .blog-post__tag-link:focus,
@@ -471,7 +471,7 @@ tfoot td {
 .blog-index__post-tag,
 .pagination__link--number,
 .pagination__link-text {
-    color: #15357a
+    color: #808080
 }
 
 .pagination__link--number:focus,
@@ -487,11 +487,11 @@ tfoot td {
 }
 
 .pagination__link-icon svg {
-    fill: #15357a
+    fill: #808080
 }
 
 .card__price {
-    color: #15357a;
+    color: #808080;
     font-family: sans-serif, serif;
     font-size: 24px;
     font-style: normal;
@@ -500,11 +500,11 @@ tfoot td {
 }
 
 .card__body svg {
-    fill: #15357a
+    fill: #808080
 }
 
 .social-links__icon {
-    background-color: #15357a
+    background-color: #808080
 }
 
 .social-links__icon:focus,
@@ -514,7 +514,7 @@ tfoot td {
 
 .social-links__icon:active {
     background-color: #3d5da2;
-    color: #15357a;
+    color: #808080;
     font-family: sans-serif, serif;
     font-size: 24px;
     font-style: normal;
@@ -743,38 +743,38 @@ blockquote {
 .btn-white-fill {
     background-color: #fff;
     border-color: #fff;
-    color: #2c71f0
+    color: #fbb31d
 }
 
 .btn-blue {
-    background: #2c71f0;
-    border-color: #2c71f0;
+    background: #fbb31d;
+    border-color: #fbb31d;
     color: #fff
 }
 
 .btn-lightblue {
     background: transparent;
-    border-color: #2c71f0;
-    color: #2c71f0
+    border-color: #fbb31d;
+    color: #fbb31d
 }
 
 .btn-lightblue:focus,
 .btn-lightblue:hover {
-    background: #2c71f0;
-    border-color: #2c71f0;
+    background: #fbb31d;
+    border-color: #fbb31d;
     color: #fff
 }
 
 .btn-dark-outline {
     background: transparent;
-    border-color: #15357a;
-    color: #15357a
+    border-color: #808080;
+    color: #808080
 }
 
 .btn-dark-outline:focus,
 .btn-dark-outline:hover {
-    background: #2c71f0;
-    border-color: #2c71f0;
+    background: #fbb31d;
+    border-color: #fbb31d;
     color: #fff
 }
 
@@ -788,11 +788,11 @@ blockquote {
 .btn-pink:hover {
     background: #fff;
     border-color: #fff;
-    color: #2c71f0
+    color: #fbb31d
 }
 
 .btn-text {
-    color: #2c71f0;
+    color: #fbb31d;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -872,7 +872,7 @@ blockquote {
 }
 
 .page-shield .header-menu-container {
-    background: #15357a
+    background: #808080
 }
 
 .page-shield .section.faq-accordain {
@@ -883,7 +883,7 @@ blockquote {
 .page-shield .cq-content p,
 .page-shield .cq-text,
 .page-shield h2 {
-    color: #15357a
+    color: #808080
 }
 
 .cq-content li {
@@ -904,7 +904,7 @@ blockquote {
 .page-shield .testimonial__quote-btn a,
 .page-shield .testimonial__quote-content-footer,
 .page-shield .testimonial__quote-content-quote h3 {
-    color: #15357a
+    color: #808080
 }
 
 .page-shield .testimonial__quote-content-footer {
@@ -912,7 +912,7 @@ blockquote {
 }
 
 .page-shield .testimonial__quote-btn a {
-    border: 1px solid #15357a;
+    border: 1px solid #808080;
     border-radius: 50px;
     font-weight: 500;
     padding: 12px 24px
@@ -1132,11 +1132,11 @@ form textarea:focus {
 
 .no-banner .dropdown-button,
 .no-banner .simple-menu-links {
-    color: #15357a
+    color: #808080
 }
 
 .no-banner .header-button-one a {
-    color: #15357a !important
+    color: #808080 !important
 }
 
 .no-banner .header-logo-mobile {
@@ -1148,14 +1148,14 @@ form textarea:focus {
 }
 
 .no-banner .header-button-two a {
-    background-color: #2c71f0 !important;
-    border-color: #2c71f0 !important;
+    background-color: #fbb31d !important;
+    border-color: #fbb31d !important;
     color: #fff
 }
 
 .no-banner .blog-post-banner-section .blog-author,
 .no-banner .blog-post-banner-section .content-group h1 {
-    color: #15357a
+    color: #808080
 }
 
 .no-banner .blog-post-banner-section .content-group h1 span {
@@ -1185,7 +1185,7 @@ form textarea:focus {
 }
 
 .header-language .lang_list_class li a {
-    color: #15357a;
+    color: #808080;
     font-size: 14px;
     font-weight: 500;
     margin: 0
@@ -1242,7 +1242,7 @@ form textarea:focus {
 
 .no-banner .blog-post-banner-section {
     background: #fff;
-    color: #15357a;
+    color: #808080;
     min-height: 100%
 }
 
@@ -1259,20 +1259,20 @@ form textarea:focus {
 }
 
 .wihtout-banner .dropdown-button {
-    color: #15357a
+    color: #808080
 }
 
 .wihtout-banner .header-button-one a {
-    color: #15357a !important
+    color: #808080 !important
 }
 
 .wihtout-banner .simple-menu-links {
-    color: #15357a
+    color: #808080
 }
 
 .wihtout-banner .header-button-two a {
-    background-color: #2c71f0 !important;
-    border-color: #2c71f0 !important;
+    background-color: #fbb31d !important;
+    border-color: #fbb31d !important;
     color: #fff
 }
 
@@ -1310,5 +1310,5 @@ form textarea:focus {
 }
 
 .white-text .banner-form * {
-    color: #15357a !important
+    color: #808080 !important
 }

@@ -8,7 +8,6 @@
 .home-banner-v2-content {
     color: #fff;
     max-width: 700px;
-    padding: 108px 0 50px
 }
 
 .home-banner-v2-content h1 {
@@ -66,11 +65,11 @@
 }
 
 .home-banner-v2-add a {
-    color: #15357a
+    color: #808080
 }
 
 .home-banner-v2-add-content h3 {
-    color: #15357a;
+    color: #808080;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px
@@ -94,6 +93,8 @@
 
 .home-banner-v2 .container {
     max-width: 100%;
+    display: flex;
+    align-items: center;
     padding-left: 74px;
     padding-right: 74px
 }
@@ -127,9 +128,6 @@ body.scroll-header .home-banner-v2-add {
         padding-right: 0
     }
 
-    .home-banner-v2-content {
-        padding: 50px 0
-    }
 
     .home-banner-v2-add {
         display: none !important

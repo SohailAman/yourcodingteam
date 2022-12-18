@@ -4,9 +4,15 @@
     padding: 48px 0
 }
 
+.bg-content-module h2,
+.card-listing-module h2,
+.graphic-module h2 {
+    color: #fbb31c;
+}
+
 .bg-content-module h2 {
     font-size: 48px;
-    line-height: 67px
+    line-height: 67px;
 }
 
 .bg-content-module p {

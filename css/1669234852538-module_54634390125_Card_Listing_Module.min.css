@@ -121,11 +121,11 @@
 }
 
 .card-listing-module .wrapper a {
-    color: #2c71f0
+    color: #fdb11d
 }
 
 .card-listing-module .wrapper .col .title {
-    color: #2c71f0;
+    color: #fdb11d;
     font-size: 21px;
     font-weight: 400;
     line-height: 1.36
@@ -173,7 +173,7 @@
     }
 
     .card-listing-module .wrapper .col .title {
-        color: #15357a;
+        color: #808080;
         display: block;
         font-size: 18px;
         font-weight: 400;
