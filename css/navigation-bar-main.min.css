@@ -553,17 +553,26 @@ header .sm-slider {
 
 .slideOut {
     transition: all .5s;
-    transform: translateX(-100%);
-}
-
-.slideInn {
-    transform: translateX(0) !important;
-    transition: all .5s;
+    transform: none;
 }
 
 @media (max-width:778px) {
+    .navigation-bar__container.navigation-bar__desktop:hover .navbar-item__button-default {
+        color: #fff !important;
+    }
+
     header .navbar-toggler {
         display: block;
+    }
+
+    .slideOut {
+        transition: all .5s;
+        transform: translateX(-100%);
+    }
+
+    .slideInn {
+        transform: translateX(0) !important;
+        transition: all .5s;
     }
 
     .navigation-bar__right-container .logo-small-view {
@@ -601,5 +610,11 @@ header .sm-slider {
 
     .navigation-bar__right-container .navbar-item__container {
         color: #fff !important;
+    }
+}
+
+@media (max-width:480px) {
+    .navigation-bar__right-container {
+        width: 100vw !important;
     }
 }
