@@ -137,9 +137,21 @@
 
 
 
+let navbar = document.getElementById('navbar');
 let menuTriggerBtn = document.getElementById('menuTrigger');
 let closeBtn = document.getElementById('closeBtn');
 let menuSlide = document.getElementById('menuSlide');
+
+
+window.onscroll = () => {
+    let scrolled = window.scrollY;
+    if (scrolled >= 200) {
+        navbar.classList.add('scrolled');
+    }
+    else {
+        navbar.classList.remove('scrolled');
+    }
+}
 
 document.addEventListener('swiped-left', function () {
     menuSlide.classList.remove('slideInn');
