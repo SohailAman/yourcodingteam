@@ -135,8 +135,7 @@ body.scroll-header .home-banner-v2-add {
 
     .home-banner-v2 {
         background-image: url(../images/home.jpg) !important;
-        background-position: bottom !important;
-        height: 110vh
+        height: 100vh
     }
 
     .home-banner-v2 .container {
@@ -156,5 +155,22 @@ body.scroll-header .home-banner-v2-add {
     .btn {
         font-size: 14px;
         line-height: 18px;
+    }
+}
+
+@media (max-width:480px) {
+
+    .home-banner-v2 h2,
+    .graphic-module h2 {
+        font-size: 28px !important;
+    }
+
+    .home-banner-v2-content p {
+        font-size: 14px !important;
+    }
+
+    .btn {
+        font-size: 14px !important;
+        line-height: 13px !important;
     }
 }
