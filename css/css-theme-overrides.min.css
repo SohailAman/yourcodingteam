@@ -159,8 +159,8 @@ blockquote {
 .button,
 .common-cta a,
 button {
-    background-color: #fbb31d;
-    border: 2px #fbb31d;
+    background-color: #074f9e;
+    border: 2px #074f9e;
     border-radius: 40px;
     color: #fff;
     display: inline-block;
@@ -208,7 +208,7 @@ button:active {
 
 .transparent-btn a {
     background: transparent;
-    color: #fbb31d;
+    color: #074f9e;
     padding: 0;
     position: relative
 }
@@ -288,8 +288,8 @@ form textarea {
 
 form .hs-button,
 form input[type=submit] {
-    background-color: #fbb31d;
-    border: 2px #fbb31d;
+    background-color: #074f9e;
+    border: 2px #074f9e;
     border-radius: 40px;
     color: #fff;
     font-family: sans-serif;
@@ -743,25 +743,25 @@ blockquote {
 .btn-white-fill {
     background-color: #fff;
     border-color: #fff;
-    color: #fbb31d
+    color: #074f9e
 }
 
 .btn-blue {
-    background: #fbb31d;
-    border-color: #fbb31d;
+    background: #074f9e;
+    border-color: #074f9e;
     color: #fff
 }
 
 .btn-lightblue {
     background: transparent;
-    border-color: #fbb31d;
-    color: #fbb31d
+    border-color: #074f9e;
+    color: #074f9e
 }
 
 .btn-lightblue:focus,
 .btn-lightblue:hover {
-    background: #fbb31d;
-    border-color: #fbb31d;
+    background: #074f9e;
+    border-color: #074f9e;
     color: #fff
 }
 
@@ -773,8 +773,8 @@ blockquote {
 
 .btn-dark-outline:focus,
 .btn-dark-outline:hover {
-    background: #fbb31d;
-    border-color: #fbb31d;
+    background: #074f9e;
+    border-color: #074f9e;
     color: #fff
 }
 
@@ -788,11 +788,11 @@ blockquote {
 .btn-pink:hover {
     background: #fff;
     border-color: #fff;
-    color: #fbb31d
+    color: #074f9e
 }
 
 .btn-text {
-    color: #fbb31d;
+    color: #074f9e;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1148,8 +1148,8 @@ form textarea:focus {
 }
 
 .no-banner .header-button-two a {
-    background-color: #fbb31d !important;
-    border-color: #fbb31d !important;
+    background-color: #074f9e !important;
+    border-color: #074f9e !important;
     color: #fff
 }
 
@@ -1271,8 +1271,8 @@ form textarea:focus {
 }
 
 .wihtout-banner .header-button-two a {
-    background-color: #fbb31d !important;
-    border-color: #fbb31d !important;
+    background-color: #074f9e !important;
+    border-color: #074f9e !important;
     color: #fff
 }
 

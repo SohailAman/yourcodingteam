@@ -433,6 +433,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, .1)
 }
 
+.navigation-bar__container-scrolled a,
+.navigation-bar__container:hover a {
+    color: #074f9e !important;
+}
+
 .navigation-bar__container .navbar-item__active .navbar-item__button-default,
 .navigation-bar__container .navbar-item__active .navbar-item__chevron,
 .navigation-bar__container .navbar-item__active .navigation-bar__hamburger-menu-icon,
@@ -490,8 +495,11 @@
 }
 
 .navigation-bar a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: #fbb31c !important;
+    color: #fff !important;
+    height: 5vw;
 }
 
 .navigation-bar button {
@@ -513,6 +521,32 @@
 .scrolled {
     box-shadow: 0px -10px 25px rgba(0, 0, 0, 0.5) !important;
     background-color: #fff;
+
+}
+
+
+.logo1 {
+    display: none !important;
+}
+
+.scrolled .logo1 {
+    display: block !important;
+}
+
+.scrolled .logo2 {
+    display: none !important;
+}
+
+.scrolled a {
+    color: #074f9e !important;
+}
+
+.navigation-bar__container.navigation-bar__desktop:hover .logo1 {
+    display: block !important;
+}
+
+.navigation-bar__container.navigation-bar__desktop:hover .logo2 {
+    display: none !important;
 }
 
 .no-scroll {
@@ -538,7 +572,6 @@
     justify-content: center;
     width: 36px;
     height: 36px;
-    padding: 6px;
     display: none;
 }
 
@@ -573,7 +606,17 @@ header .sm-slider {
     transform: none;
 }
 
+.navigation-bar__left-container img {
+    display: flex;
+    height: 100%;
+}
+
 @media (max-width:778px) {
+    .navigation-bar a {
+        height: 80% !important;
+        margin: 0 auto;
+        display: flex;
+    }
 
     .navigation-bar__container.navigation-bar__desktop:hover .navbar-item__button-default {
         color: #fff !important;
@@ -631,17 +674,12 @@ header .sm-slider {
     }
 }
 
-@media (max-width:480px) {
-    .navigation-bar__left-container a img {
-        width: 200px !important;
-    }
-
+@media (max-width:540px) {
     header .navbar-toggler .icon-bar {
         display: block;
         height: 3px;
         width: 24px;
     }
-
 
     .navigation-bar__right-container {
         width: 100vw !important;
