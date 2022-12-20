@@ -96,7 +96,7 @@
     display: -ms-flexbox;
     display: flex;
     font-size: 20px;
-    justify-content: space-between;
+    justify-content: center;
     padding: 24px 40px;
     position: relative;
     width: 100%
@@ -126,7 +126,7 @@
 
 .card-listing-module .wrapper .col .title {
     color: #074f9e;
-    font-size: 21px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 1.36
 }

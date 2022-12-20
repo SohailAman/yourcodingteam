@@ -499,7 +499,7 @@
     align-items: center;
     text-decoration: none;
     color: #fff !important;
-    height: 5vw;
+    height: 4.5vw;
 }
 
 .navigation-bar button {
@@ -527,6 +527,7 @@
 
 .logo1 {
     display: none !important;
+    height: 90% !important;
 }
 
 .scrolled .logo1 {

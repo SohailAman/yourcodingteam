@@ -145,7 +145,7 @@ let menuSlide = document.getElementById('menuSlide');
 
 window.onscroll = () => {
     let scrolled = window.scrollY;
-    if (scrolled >= 200) {
+    if (scrolled >= 10) {
         navbar.classList.add('scrolled');
     }
     else {

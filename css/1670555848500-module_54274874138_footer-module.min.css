@@ -45,7 +45,7 @@
 .footer-module .footer-menu-items ul li {
     display: flex;
     flex-direction: column;
-    padding: 8px 0;
+    padding: 2px 0;
     width: 100%
 }
 
@@ -65,13 +65,14 @@
 
 .footer-module .social_icons {
     display: flex;
-    justify-content: space-evenly;
-    max-width: 232px;
+    justify-content: center;
+    align-items: center;
     padding-top: 34px;
 }
 
 .footer-module .social_icons i {
     color: white;
+    margin: 0 8px;
 }
 
 .footer-module .sub-footer {
