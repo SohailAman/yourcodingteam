@@ -795,3 +795,72 @@ a.cta_button {
     font-family: 'Silka', 'Helvetica Neue', sans-serif !important;
     font-size: 11px !important;
 }
+
+/* ----------- */
+
+.form {
+    background: #f8f8f8;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: -6px 6px 29px #808080bf;
+}
+
+.contact form .group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 18px;
+}
+
+.contact form select,
+.contact form input {
+    caret-color: rgb(44, 113, 240);
+    color: rgb(1, 9, 15);
+    background-color: transparent;
+    border: 1px solid #cfd0d6;
+    border-radius: 8px !important;
+    color: #333;
+    display: block;
+    font-size: 14px;
+    height: 48px;
+    line-height: 1.42;
+    margin-bottom: 0;
+    padding: 8px 12px;
+    vertical-align: middle;
+    margin-bottom: 18px !important;
+}
+
+.contact form button {
+    background: #2C71F0;
+    border: 0;
+    color: #e4e4e4;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    width: 90%;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+    background: #3952a3;
+    color: #ffffff;
+    outline: 0;
+    transition: background-color .4s ease-out;
+}
+
+@media (min-width:681px) {
+    .content.form-cont.animated.fadeInUp {
+        max-width: 65% !important;
+    }
+}
+
+@media (max-width:680px) {
+    .content.form-cont.animated.fadeInUp {
+        max-width: 100% !important;
+    }
+
+    .contact form .group {
+        grid-template-columns: auto !important;
+        grid-gap: 0 !important;
+    }
+}
