@@ -754,4 +754,8 @@ header .sm-slider {
         height: 30px;
         font-size: 12px !important;
     }
+
+    .navigation-bar__left-container img {
+        height: 70% !important;
+    }
 }

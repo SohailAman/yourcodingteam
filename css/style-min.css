@@ -848,6 +848,10 @@ a.cta_button {
     transition: background-color .4s ease-out;
 }
 
+.imgLst {
+    width: 30vw;
+}
+
 @media (min-width:681px) {
     .content.form-cont.animated.fadeInUp {
         max-width: 65% !important;
@@ -862,6 +866,10 @@ a.cta_button {
     .contact form .group {
         grid-template-columns: auto !important;
         grid-gap: 0 !important;
+    }
+
+    .imgLst {
+        width: 60vw;
     }
 }
 
