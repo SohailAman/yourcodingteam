@@ -131,6 +131,7 @@
     }
 
     .graphic-module .gr-col {
+        background-image: none !important;
         align-items: flex-start;
         margin-bottom: 40px;
         margin-left: 0;
@@ -156,11 +157,12 @@
     }
 
     .graphic-module.graphic-widget_1631523207606 .gr-col .content {
-        max-width: 440px
+        max-width: 80%
     }
 
     .graphic-module .gr-col .content {
-        padding-left: 32px;
+        padding-left: 0px;
+        padding-right: 10px;
         margin: auto;
     }
 
@@ -175,11 +177,15 @@
     }
 
     .graphic-module.graphic-widget_1630919656097 .gr-col .content {
-        max-width: 440px
+        max-width: 80%
     }
 
     .graphic-module.graphic-widget_1631522957161 .gr-col .content {
-        max-width: 440px
+        max-width: 80%
+    }
+
+    .graphic-module .wrapper img {
+        width: 100%;
     }
 
     .graphic-module .gr-col {
@@ -196,7 +202,7 @@
     }
 
     .graphic-module.graphic-widget_1631523207606 .gr-col .content {
-        max-width: 75%;
+        max-width: 90%;
     }
 
     .graphic-module .gr-col .content {
@@ -219,11 +225,11 @@
     }
 
     .graphic-module.graphic-widget_1630919656097 .gr-col .content {
-        max-width: 280px
+        max-width: 80%
     }
 
     .graphic-module.graphic-widget_1631522957161 .gr-col .content {
-        max-width: 225px
+        max-width: 80%
     }
 
     .graphic-module .gr-col {
@@ -233,5 +239,39 @@
 
     .graphic-module p:last-child {
         margin: 0
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .graphic-module {
+        padding: 20px 0 !important;
+    }
+
+    .graphic-module-wrapper-section {
+        padding: 0 !important;
+    }
+
+    .graphic-module .gr-col .content {
+        padding: 5px !important;
+    }
+
+    .graphic-module .gr-col {
+        padding-bottom: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .graphic-module.graphic-widget_1631523207606 .gr-col .content,
+    .graphic-module.graphic-widget_1630919656097 .gr-col .content,
+    .graphic-module.graphic-widget_1631522957161 .gr-col .content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:340px) {
+
+    .home-banner-v2 h2,
+    .graphic-module h2 {
+        font-size: 26px !important;
+        line-height: 1.43 !important;
     }
 }

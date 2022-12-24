@@ -758,4 +758,8 @@ header .sm-slider {
     .navigation-bar__left-container img {
         height: 70% !important;
     }
+
+    .navigation-bar__left-container .logo1 {
+        height: 64% !important;
+    }
 }
