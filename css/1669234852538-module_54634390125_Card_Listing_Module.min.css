@@ -192,14 +192,13 @@
     }
 }
 
-@media only screen and (max-width:340px) {
+
+@media only screen and (max-width:480px) {
     .card-listing-module h2 {
         font-size: 26px !important;
         line-height: 1.4 !important;
     }
-}
 
-@media only screen and (max-width:480px) {
     .card-listing-module .wrapper .col .title {
         bottom: -12%
     }
