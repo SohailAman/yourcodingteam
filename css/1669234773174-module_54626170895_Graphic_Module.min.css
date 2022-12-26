@@ -126,13 +126,16 @@
         width: calc(100% - 20px) !important
     }
 
+    .graphic-module .js__width {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .graphic-module .wrapper {
         flex-direction: column-reverse
     }
 
     .graphic-module .gr-col {
-        background-image: none !important;
-        align-items: flex-start;
         margin-bottom: 40px;
         margin-left: 0;
         margin-top: 30px
@@ -189,9 +192,10 @@
     }
 
     .graphic-module .gr-col {
-        min-height: 250px;
+        min-height: 70vh;
         padding-bottom: 42px
     }
+
 }
 
 @media only screen and (max-width:767px) {
