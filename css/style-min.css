@@ -852,9 +852,26 @@ a.cta_button {
     width: 30vw;
 }
 
+.flexed {
+    display: flex;
+    align-items: center;
+}
+
+.flexed span {
+    margin-left: 14px;
+}
+
+.flexed i {
+    font-size: 1.5em;
+}
+
 @media (min-width:681px) {
     .content.form-cont.animated.fadeInUp {
         max-width: 65% !important;
+    }
+
+    .flexed i {
+        font-size: 1em;
     }
 }
 
