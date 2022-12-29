@@ -879,6 +879,10 @@ a.cta_button {
     background-color: #fff !important;
 }
 
+.contact-body.cont .js__width {
+    padding-top: 3rem;
+}
+
 @media (min-width:681px) {
     .content.form-cont.animated.fadeInUp {
         max-width: 65% !important;
