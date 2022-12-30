@@ -27,7 +27,7 @@
 }
 
 .footer-module .flex-columns .footer-col {
-    max-width: 320px;
+    max-width: 348px;
     min-width: 160px;
     padding-top: 30px;
     width: 100%
@@ -246,6 +246,10 @@
 
 .gg-close:after {
     transform: rotate(-45deg)
+}
+
+.hs_cos_wrapper.hs_cos_wrapper_widget.hs_cos_wrapper_type_simple_menu .hs-menu-wrapper.active-branch.flyouts.hs-menu-flow-horizontal {
+    padding-left: 28px;
 }
 
 @media (max-width:955px) {
