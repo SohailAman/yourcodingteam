@@ -887,6 +887,7 @@ a.cta_button {
     padding-top: 3rem;
 }
 
+
 @media (min-width:681px) {
     .content.form-cont.animated.fadeInUp {
         max-width: 65% !important;

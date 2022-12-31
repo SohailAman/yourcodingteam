@@ -135,6 +135,10 @@
         flex-direction: column-reverse
     }
 
+    .contact-body.cont .graphic-module .wrapper {
+        flex-direction: column
+    }
+
     .graphic-module .gr-col {
         margin-bottom: 40px;
         margin-left: 0;
@@ -189,6 +193,11 @@
 
     .graphic-module .wrapper img {
         width: 100%;
+    }
+
+    .graphic-module.graphic-widget_1631523207606 .gr-col .content .imgCont img {
+        width: 50%;
+        margin: 0 auto;
     }
 
     .graphic-module .gr-col {
@@ -268,6 +277,11 @@
     .graphic-module.graphic-widget_1630919656097 .gr-col .content,
     .graphic-module.graphic-widget_1631522957161 .gr-col .content {
         max-width: 100%;
+    }
+
+    .graphic-module.graphic-widget_1631523207606 .gr-col .content .imgCont img {
+        width: 70%;
+        margin: 0 auto;
     }
 }
 
