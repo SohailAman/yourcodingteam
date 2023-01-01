@@ -887,6 +887,11 @@ a.cta_button {
     padding-top: 3rem;
 }
 
+@media only screen and (max-width: 540px) {
+    .graphic-module-wrapper-section.sm-padding {
+        padding-top: 50px !important;
+    }
+}
 
 @media (min-width:681px) {
     .content.form-cont.animated.fadeInUp {
