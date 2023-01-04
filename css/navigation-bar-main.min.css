@@ -680,6 +680,7 @@ header .sm-slider {
         height: 80% !important;
         margin: 0 auto;
         display: flex;
+        text-align: center;
     }
 
     .navigation-bar__container.navigation-bar__desktop:hover .navbar-item__button-default {
@@ -747,6 +748,14 @@ header .sm-slider {
 
     .navigation-bar__right-container {
         width: 100vw !important;
+    }
+
+    .navigation-bar__right-container .navbar-item__container {
+        margin: 10px auto 0 auto;
+    }
+
+    .navigation-bar a {
+        font-size: 15px;
     }
 
     .navigation-bar__right-container #closeBtn {
