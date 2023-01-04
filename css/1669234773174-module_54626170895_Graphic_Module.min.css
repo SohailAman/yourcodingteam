@@ -135,8 +135,9 @@
         flex-direction: column-reverse
     }
 
+    .remote .graphic-module .wrapper,
     .contact-body.cont .graphic-module .wrapper {
-        flex-direction: column
+        flex-direction: column;
     }
 
     .graphic-module .gr-col {
