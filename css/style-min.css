@@ -15,6 +15,10 @@ html {
     color: #2C71F0;
 }
 
+.how .home-banner-v2 h2 {
+    font-size: 38px !important;
+}
+
 header .navbar .navbar-nav .dropdown-menu {
     display: block !important;
     visibility: hidden !important;
