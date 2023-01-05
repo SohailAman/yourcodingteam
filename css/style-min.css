@@ -15,6 +15,9 @@ html {
     color: #2C71F0;
 }
 
+.how .content.left {
+    margin-left: 75px;
+}
 
 header .navbar .navbar-nav .dropdown-menu {
     display: block !important;
@@ -918,9 +921,17 @@ a.cta_button {
     .imgLst {
         width: 60vw;
     }
+
+    .how .content.left {
+        margin-left: 20px;
+    }
 }
 
 @media screen and (max-width:998px) {
+    .how .content.left {
+        margin-left: 30px;
+    }
+
     .graphic-module-wrapper-section {
         margin-left: 0 !important;
         padding: 32px 0 0 0 !important;
