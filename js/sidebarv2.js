@@ -168,6 +168,18 @@ closeBtn.addEventListener('click', () => {
 })
 
 
+// Get the "See More" button and the next section
+const seeMoreBtn = document.querySelector('.see-more-btn');
+const nextSection = document.querySelector('.next-section');
+
+// Add a click event listener to the button
+seeMoreBtn.addEventListener('click', function () {
+    // Get the top position of the next section
+    const nextSectionPosition = nextSection.getBoundingClientRect().top;
+    // Scroll to the next section using the smooth scroll behavior
+    window.scroll({ top: nextSectionPosition, left: 0, behavior: 'smooth' });
+});
+
 //---scroll to-----
 $(function () {
     $('.smoothScroll').click(function () {
