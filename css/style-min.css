@@ -842,6 +842,10 @@ a.cta_button {
     margin-bottom: 18px !important;
 }
 
+.next-section {
+    padding-top: 3rem;
+}
+
 .contact form button {
     background: #2C71F0;
     border: 0;
