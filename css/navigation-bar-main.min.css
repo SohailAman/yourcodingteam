@@ -247,7 +247,6 @@
     outline: none;
     font-family: inherit;
     height: 100%;
-    margin: 10px 0;
 }
 
 .py-0 {
@@ -517,7 +516,7 @@
 }
 
 .navigation-bar__container-scrolled a,
-.navigation-bar__container-scrolled .navbar-item__button.select,
+.navigation-bar__container-scrolled,
 .navigation-bar__container:hover a,
 .navigation-bar__container:hover .navbar-item__button.select {
     color: #074f9e !important;
@@ -623,6 +622,7 @@
     display: none !important;
 }
 
+.scrolled .navbar-item__button.select,
 .scrolled a {
     color: #074f9e !important;
 }

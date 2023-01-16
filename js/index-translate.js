@@ -30,7 +30,7 @@ const translations = {
         'last-1': 'Selecting the right talent',
         'last-2': 'Hiring through local laws',
         'last-3': 'Office and Management',
-        'foot-para': ' Yourcodingteam is a company that specializes in finding and guiding talent in offshore countries.Within the team, the emphasis is mainly on having the talents communicate well with the clients. You will therefore receive a service that you would not expect from the average outsourcing company.',
+        'foot-para': 'Yourcodingteam is a company that specializes in finding and guiding talent in offshore countries.Within the team, the emphasis is mainly on having the talents communicate well with the clients. You will therefore receive a service that you would not expect from the average outsourcing company.',
     },
     'nl': {
         'Hire': 'Remote',
@@ -76,9 +76,10 @@ languageDropdown.addEventListener('change', function (event) {
     // Translate the website when a new language is selected
     translate(event.target.value);
 });
-
-if (navigator.language.includes("nl")) {
+let browserLang = navigator.language;
+if (browserLang.includes("nl")) {
     translate("nl");
+    console.log(browserLang)
 } else {
     translate("en");
 }
