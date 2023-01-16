@@ -77,12 +77,10 @@ languageDropdown.addEventListener('change', function (event) {
     translate(event.target.value);
 });
 
-// Get the browser's current language to display the website in
-let browserLanguage = navigator.language || navigator.userLanguage;
-if (browserLanguage.startsWith("nl")) {
+if (navigator.language.includes("nl")) {
     translate("nl");
-    console.log(browserLanguage)
 } else {
     translate("en");
 }
+
 
