@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -60,31 +60,39 @@
           </div>
 
           <div class="navbar-item__container dropdown">
-            <a href="#" class="navbar-item__button 
-        navbar-item__button-default">
+            <a href="#" data-translate="Hire" class="translatable navbar-item__button  navbar-item__button-default">
               Hire
               <i class="fa fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu">
               <li class="dropdown-item">
-                <a href="./remote.html">Services</a>
+                <a href="./remote.html" data-translate="Services" class="translatable">Services</a>
               </li>
               <li class="dropdown-item">
-                <a href="./how-it-works.html">How It Works?</a>
+                <a href="./how-it-works.html" data-translate="How It Works?" class="translatable">How It Works?</a>
               </li>
               <li class="dropdown-item">
-                <a href="./get-started.html">Get Started</a>
+                <a href="./get-started.html" data-translate="Get Started" class="translatable">Get Started</a>
               </li>
             </ul>
           </div>
           <div class="navbar-item__container">
-            <a href="./why-yourcodingteam.html" class="navbar-item__button navbar-item__button-default">About Us</a>
+            <a href="./why-yourcodingteam.html" data-translate="About Us"
+              class="translatable navbar-item__button navbar-item__button-default">About Us</a>
           </div>
           <div class="navbar-item__container">
-            <a href="./prices.html" class="navbar-item__button navbar-item__button-default">Prices</a>
+            <a href="./prices.html" data-translate="Prices"
+              class="translatable navbar-item__button navbar-item__button-default">Prices</a>
           </div>
           <div class="navbar-item__container">
-            <a href="./contact.html" class="navbar-item__button navbar-item__button-default">Contact</a>
+            <a href="./contact.html" data-translate="Contact"
+              class="translatable navbar-item__button navbar-item__button-default">Contact</a>
+          </div>
+          <div class="navbar-item__container">
+            <select class="language-dropdown select navbar-item__button navbar-item__button-default">
+              <option value="en" selected>English</option>
+              <option value="nl">Dutch</option>
+            </select>
           </div>
         </div>
       </div>
@@ -109,15 +117,18 @@
                   <div class="home-banner-v2 animatedParent animateOnce">
                     <div class="container">
                       <div class="home-banner-v2-content animated fadeInUp">
-                        <h2>
-                          Hire top rated developers worldwide with a partnership that never felt so close!
+                        <h2 class="translatable-paragraph" data-translate="head-1">
+                          Hire top rated software developers worldwide with a partnership that never felt so close!
                         </h2>
-                        <p>
+                        <p class="translatable-paragraph" data-translate="para-1">
                           The developer is hired by our local office, supervised, receives office supplies and is
                           surrounded by like-minded people. We take care of payroll, legislation and HR.
                         </p>
                         <div class="home-banner-v2-content-btn">
-                          <button id="demo-hero-btn" class="see-more-btn btn btn-white">See More</button>
+                          <button id="demo-hero-btn" class="see-more-btn btn btn-white translatable-paragraph"
+                            data-translate="btn-1">
+                            See More
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -156,22 +167,26 @@
                           <div class="animated fadeInLeftShort col col-6"
                             style="align-items:center;justify-content:flex-start;">
                             <div class="content left" style="max-width:85%;">
-                              <h2>
+                              <h2 class="translatable-paragraph" data-translate="head-2">
                                 <strong>
-                                  All big tech companies already hiring globally. Why aren't you?
+                                  The demand for highly skilled technical employees in the Netherlands continues to
+                                  rise!
                                 </strong>
                               </h2>
-                              <p>
-                                Searching worldwide is a great way to hire top talent and expand your business. But its
-                                not easy. Finding talent, Opening local offices, arranging payment, taxes and equipment
-                                is complex. You need a business structure with layers of accountability to make sure
-                                everyone does their job well.
+                              <p class="translatable-paragraph" data-translate="para-2a">
+                                Worldwide, however, there are much more technically trained people. This makes
+                                international recruiting a great way to hire top talent and grow your business. To do
+                                this, you need a corporate structure where different layers of responsibility ensure
+                                that everyone does their job well.
                               </p>
-                              <p>
+                              <p class="translatable-paragraph" data-translate="para-2b">
                                 We take care of this!
                               </p>
                               <div class="buttons">
-                                <a href="./remote.html" class="btn btn-text">Learn more</a>
+                                <a href="./remote.html" class="btn btn-text translatable-paragraph"
+                                  data-translate="btn-2">
+                                  Learn more
+                                </a>
                               </div>
 
                             </div>
@@ -226,15 +241,19 @@
                           <div class="animated fadeInLeftShort col col-6"
                             style="align-items:center;justify-content:flex-start;">
                             <div class="content left" style="max-width:85%;">
-                              <h2><strong>So how does this work?
-                                </strong></h2>
-                              <p>
-                                We personally go through your wishes and find a talented developer. If you're happy,
-                                we'll hire him through our local office. We are on top of their communication and ensure
-                                that they integrate into your corporate culture
+                              <h2 class="translatable-paragraph" data-translate="head-3">
+                                <strong>
+                                  So how does this work?
+                                </strong>
+                              </h2>
+                              <p class="translatable-paragraph" data-translate="para-3">
+                                We personally go through your wishes and find a talented developer. If you are
+                                satisfied, we will hire the developer through our local office. We ensure pleasant
+                                communication and ensure that the developer feels integrated into your company culture.
                               </p>
                               <div class="buttons">
-                                <a href="./how-it-works.html" class="btn btn-text">Learn more</a>
+                                <a href="./how-it-works.html" class="btn btn-text translatable-paragraph"
+                                  data-translate="btn-2">Learn more</a>
                               </div>
                             </div>
                           </div>
@@ -284,18 +303,19 @@
                           <div class="animated fadeInLeftShort col col-6"
                             style="align-items:center;justify-content:flex-start;">
                             <div class="content left" style="max-width:85%;">
-                              <h2>
+                              <h2 class="translatable-paragraph" data-translate="head-4">
                                 <strong>
                                   Experience it yourself to believe it!
                                 </strong>
                               </h2>
-                              <p>
+                              <p class="translatable-paragraph" data-translate="para-4">
                                 Do you need a back-end developer? Whether you plan to grow in the coming years with both
                                 your back-end and front-end developers. Your coding team is on hand and connects you
                                 with talented developers.
                               </p>
                               <div class="buttons">
-                                <a href="./get-started.html" class="btn btn-text">Get Started</a>
+                                <a href="./get-started.html" class="btn btn-text translatable"
+                                  data-translate="Get Started">Get Started</a>
                               </div>
 
                             </div>
@@ -349,10 +369,12 @@
                           <div class="content animated fadeInLeftShort"
                             style="max-width:886px;background:RGBA(255, 255, 255,1.0);">
                             <div class="title">
-                              <h2><strong>Our Environment</strong></h2>
+                              <h2 class="translatable-paragraph" data-translate="head-5">
+                                <strong>Our Environment</strong>
+                              </h2>
                             </div>
                             <div class="cont">
-                              <p>
+                              <p class="translatable-paragraph" data-translate="para-5">
                                 While The developer works for you, he works in a great company atmosphere locally. He
                                 works with like-minded people. There is a manager who can help him and who ensures that
                                 he moves within the company culture. There are weekly feedback moments between both
@@ -399,9 +421,9 @@
                       <div class="wrapper rows animatedParent AnimateOnce">
                         <div class="title-wrapper animated fadeInDownShort go">
                           <div class="title" style="max-width:1140px;">
-                            <h2 style="text-align: center;">
+                            <h2 style="text-align: center;" class="translatable-paragraph" data-translate="last-head">
                               <strong>
-                                Yourcodingteam does it all for you
+                                Yourcodingteam does it all for you.
                               </strong>
                             </h2>
                           </div>
@@ -412,7 +434,7 @@
                           <div class="content">
                             <img src="./images/image.jpg" alt="Image (2)" loading="lazy">
                           </div>
-                          <div class="title">
+                          <div class="title translatable-paragraph" data-translate="last-1">
                             Selecting the right talent
                           </div>
                         </div>
@@ -421,7 +443,7 @@
                           <div class="content">
                             <img src="./images/4.jpg" alt="Image (3)" loading="lazy">
                           </div>
-                          <div class="title">
+                          <div class="title translatable-paragraph" data-translate="last-2">
                             Hiring through local laws
                           </div>
                         </div>
@@ -430,7 +452,7 @@
                           <div class="content">
                             <img src="./images/home.jpg" alt="Image (4)" loading="lazy">
                           </div>
-                          <div class="title">
+                          <div class="title translatable-paragraph" data-translate="last-3">
                             Office and Management
                           </div>
                         </div>
@@ -472,7 +494,8 @@
           <div class="footer-group-columns">
             <div class="footer-col">
               <div id="accordion-1">
-                <p class="hs-menu-item hs-menu-depth-1" style="padding-right: 10px;">
+                <p class="hs-menu-item hs-menu-depth-1 translatable-paragraph" data-translate="foot-para"
+                  style="padding-right: 10px;">
                   Yourcodingteam is a company that specializes in finding and guiding talent in offshore countries.
                   Within the team, the emphasis is mainly on having the talents communicate well with the clients. You
                   will therefore receive a service that you would not expect from the average outsourcing company.
@@ -536,13 +559,13 @@
   </div>
 
 
+  <!-- translate -->
+  <script src="./js/index-translate.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <!-- Script -->
   <script src="./js/sidebarv2.js"></script>
   <script src="./js/Plugins-animateit.min.js"></script>
-
-
 </body>
 
 </html>

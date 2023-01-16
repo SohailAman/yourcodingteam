@@ -134,6 +134,7 @@
     align-items: center;
     display: flex;
     height: 100%;
+    color: inherit;
 }
 
 .dropdown {
@@ -239,6 +240,12 @@
 .navbar-item__button-outlined:hover {
     background: #2f5edd !important;
     border: 1px solid #2f5edd !important
+}
+
+.navbar-item__button.select {
+    font-size: 16px;
+    outline: none;
+    font-family: inherit;
 }
 
 .navbar-item__button {
