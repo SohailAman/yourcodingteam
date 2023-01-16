@@ -246,6 +246,13 @@
     font-size: 16px;
     outline: none;
     font-family: inherit;
+    height: 100%;
+    margin: 10px 0;
+}
+
+.py-0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .navbar-item__button {
@@ -505,11 +512,14 @@
 .navigation-bar__container.navigation-bar__desktop:hover {
     background-color: #fff;
     border: 1px solid #e8ebf2;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .1)
+    color: #074f9e !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
 }
 
 .navigation-bar__container-scrolled a,
-.navigation-bar__container:hover a {
+.navigation-bar__container-scrolled .navbar-item__button.select,
+.navigation-bar__container:hover a,
+.navigation-bar__container:hover .navbar-item__button.select {
     color: #074f9e !important;
 }
 
