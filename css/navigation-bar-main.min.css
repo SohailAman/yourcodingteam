@@ -584,6 +584,26 @@
     text-decoration: none;
     color: #fff !important;
     height: 4.5vw;
+    position: relative;
+}
+
+.navigation-bar a[data-translate="Hire"]::after {
+    content: url(../images/chevron-down-solid.svg);
+    width: 12px;
+    position: absolute;
+    right: 0;
+}
+
+.navigation-bar a[data-translate="Hire"]::before {
+    content: url(../images/chevron-down-solid-2.svg);
+    width: 12px;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+}
+
+.scrolled a[data-translate="Hire"]::before {
+    display: none !important;
 }
 
 .navigation-bar button {
