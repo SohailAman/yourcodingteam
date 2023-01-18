@@ -602,6 +602,7 @@
     right: 0;
 }
 
+.navigation-bar:hover a[data-translate="Hire"]::before,
 .scrolled a[data-translate="Hire"]::before {
     display: none !important;
 }
