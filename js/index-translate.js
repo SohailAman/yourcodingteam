@@ -2,6 +2,7 @@
 const languageDropdown = document.querySelector('.language-dropdown');
 const elements = document.querySelectorAll('.translatable');
 const paragraphs = document.querySelectorAll('.translatable-paragraph');
+const aLinks = document.querySelectorAll('.translatable-aLink');
 
 //Create an object with translations
 const translations = {
@@ -31,6 +32,8 @@ const translations = {
         'last-2': 'Hiring through local laws',
         'last-3': 'Office and Management',
         'foot-para': 'Yourcodingteam is a company that specializes in finding and guiding talent in offshore countries.Within the team, the emphasis is mainly on having the talents communicate well with the clients. You will therefore receive a service that you would not expect from the average outsourcing company.',
+        'foot-link1': './assets/Privacy Statement EN.pdf',
+        'foot-link2': './assets/Disclaimer EN.pdf',
     },
     'nl': {
         'Hire': 'Remote',
@@ -58,6 +61,8 @@ const translations = {
         'last-2': 'Aannemen via lokale wetgeving',
         'last-3': 'Kantoor en management',
         'foot-para': 'Yourcodingteam is een bedrijf dat gespecialiseerd is in het vinden en begeleiden van talent in offshore landen. Binnen het team ligt de nadruk vooral op het  communiceren van de talenten met de opdrachtgever. Daarnaast moet onder aan de streep onze service koste verminderd zijn en meer marge opleveren voor de klant. Dit peilen we dan ook continue. U zult merken dat u van ons een service krijgt die u niet zou verwachten van het gemiddelde outsourcingsbedrijf.',
+        'foot-link1': './assets/Privacy Statement NL.pdf',
+        'foot-link2': './assets/Disclaimer NL.pdf',
     }
 };
 
@@ -68,6 +73,9 @@ function translate(language) {
     });
     paragraphs.forEach(function (paragraph) {
         paragraph.textContent = translations[language][paragraph.getAttribute('data-translate')];
+    });
+    aLinks.forEach(function (aLink) {
+        aLink.href = translations[language][aLink.getAttribute('data-translate')];
     });
 }
 
@@ -83,5 +91,3 @@ if (browserLang.includes("nl")) {
 } else {
     translate("en");
 }
-
-
