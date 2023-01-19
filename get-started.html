@@ -138,16 +138,28 @@
 
                                                                 <form id="contact-form">
                                                                     <div class="group">
-                                                                        <input type="text" placeholder="First Name">
-                                                                        <input type="text" placeholder="Last Name">
+                                                                        <input type="text" placeholder="First Name"
+                                                                            data-translate="input-1"
+                                                                            class="translatable-inputPlaceholder">
+                                                                        <input type="text" placeholder="Last Name"
+                                                                            data-translate="input-1a"
+                                                                            class="translatable-inputPlaceholder">
                                                                     </div>
                                                                     <div class="group">
-                                                                        <input type="text" placeholder="Company Name">
-                                                                        <input type="email" placeholder="Email Address">
+                                                                        <input type="text" placeholder="Company Name"
+                                                                            data-translate="input-2"
+                                                                            class="translatable-inputPlaceholder">
+                                                                        <input type="email" placeholder="Email Address"
+                                                                            data-translate="input-2a"
+                                                                            class="translatable-inputPlaceholder">
                                                                     </div>
                                                                     <div class="group">
                                                                         <select id="phone" name="phone">
-                                                                            <option>Country Code</option>
+                                                                            <option data-translate="input-3"
+                                                                                class="translatable-paragraph">
+                                                                                Country
+                                                                                Code
+                                                                            </option>
                                                                             <option value="93">Afghanistan +93</option>
                                                                             <option value="358">Åland Islands +358
                                                                             </option>
@@ -462,30 +474,52 @@
                                                                             <option value="260">Zambia +260</option>
                                                                             <option value="263">Zimbabwe +263</option>
                                                                         </select>
-                                                                        <input type="number" placeholder="phone Number">
+                                                                        <input type="number" placeholder="phone Number"
+                                                                            data-translate="input-tel"
+                                                                            class="translatable-inputPlaceholder">
                                                                     </div>
                                                                     <select name="people" id="people">
-                                                                        <option value="">Type of developer
+                                                                        <option value="">
+                                                                            Type of
+                                                                            developer
                                                                         </option>
-                                                                        <option value="Frontend Developer">Frontend
-                                                                            Developer</option>
-                                                                        <option value="Backend Developer">Backend
-                                                                            Developer</option>
+                                                                        <option value="Frontend Developer">
+                                                                            Frontend
+                                                                            Developer
+                                                                        </option>
+                                                                        <option value="Backend Developer">
+                                                                            Backend
+                                                                            Developer
+                                                                        </option>
                                                                         <option value="App Developer">App Developer
                                                                         </option>
                                                                         <option value="Fullstack Developer">Fullstack
                                                                             Developer</option>
                                                                     </select>
-                                                                    <input type="text" placeholder="Company Website">
+                                                                    <input type="text" placeholder="Company Website"
+                                                                        data-translate="input-last"
+                                                                        class="translatable-inputPlaceholder">
                                                                     <button type="submit">Submit</button>
-
-                                                                    <p>
-                                                                        We respect your data. By submitting this form,
-                                                                        you
-                                                                        agree that we may use ​this information in
-                                                                        accordance with our
-                                                                        <a href="#">Privacy policy</a>
-                                                                    </p>
+                                                                    <span style="display: block;">
+                                                                        <p style="display: inline;"
+                                                                            data-translate="para-last"
+                                                                            class="translatable-paragraph">
+                                                                            We respect your data. By submitting this
+                                                                            form,
+                                                                            you
+                                                                            agree that we may use ​this information in
+                                                                            accordance with our
+                                                                        </p>
+                                                                        <p style="display: inline;">
+                                                                            <a href="#" data-translate="a-last"
+                                                                                class="translatable-paragraph">
+                                                                                <strong>
+                                                                                    Privacy
+                                                                                    policy
+                                                                                </strong>
+                                                                            </a>
+                                                                        </p>
+                                                                    </span>
                                                                 </form>
                                                                 <!-- End #contact-form -->
                                                             </div>
@@ -602,7 +636,7 @@
     <script src="./js/sidebarv2.js"></script>
     <script src="./js/Plugins-animateit.min.js"></script>
     <!-- translate -->
-    <script src="./js/nav-footer-tran.js"></script>
+    <script src="./js/get-started-translate.js"></script>
 
 
 </body>
