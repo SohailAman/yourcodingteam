@@ -39,7 +39,7 @@ const translations = {
         'btn-1': 'Lees meer',
         'para-2': 'Het salaris in onze offshore landen ligt gemiddeld tussen de €1000 en €2000 bruto per maand. Dit salaris wordt berekend op basis van expertise en ervaring. De werknemer ontvangt van yourcodingteam het bedrag per maand dat u heeft afgesproken. Bij ziekte of afwezigheid wordt de developer op zijn contractvoorwaarden doorbetaald. Dit wordt niet naar u als bedrijf doorberekend, waardoor u het minste risico loopt. Bij Yourcodingteam betaald de opdrachtgever alleen de gewerkte uren.',
         'btn-2': 'Neem contact op',
-        'para-3': 'De illustratie geeft weer welke diensten wij bieden aan u en de developer. U betaald aan ons het brutoloon keer een omrekeningsfactor en yourcodingteam regelt alles.den.',
+        'para-3': 'De illustratie geeft weer welke diensten wij bieden aan u en de developer. U betaald aan ons het brutoloon keer een omrekeningsfactor en yourcodingteam regelt alles.',
         'para-4': 'In elke opdrachtbevestiging wordt vastgelegd dat alle gecreëerde intellectuele eigendommen worden overgedragen aan de opdrachtgever. Het ondertekenen van een NDA behoort ook tot de normale procedure.',
         'foot-para': 'Yourcodingteam is een bedrijf dat gespecialiseerd is in het vinden en begeleiden van talent in offshore landen. Binnen het team ligt de nadruk vooral op het  communiceren van de talenten met de opdrachtgever. Daarnaast moet onder aan de streep onze service koste verminderd zijn en meer marge opleveren voor de klant. U zult merken dat u van ons een service krijgt die u niet zou verwachten van het gemiddelde outsourcingsbedrijf.',
         'foot-link1': './assets/Privacy Statement NL.pdf',
