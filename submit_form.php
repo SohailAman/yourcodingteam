@@ -1,5 +1,5 @@
 <?php
-$to = "sohailaman121@gmail.com";
+$to = "Info@yourcodingteam.com";
 
 // Collect form data
 $first_name = $_POST['First Name'];
