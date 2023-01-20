@@ -47,7 +47,7 @@ const translations = {
         'para-1': 'De developer wordt door ons offshore kantoor ingehuurd, krijgt een werkplek op locatie en alle kantoorbenodigheden. Daarnaast hebben wij een lokaal management en bieden wij begeleiding. Tevens verzorgen wij de salarisadministratie, wetgevingen en HR. ',
         'btn-1': 'Lees meer',
         'head-2': 'De vraag naar hooggeschoold technisch personeel in Nederland blijft maar stijgen!',
-        'para-2a': 'Wereldwijd is er echter meer aanbod aan technisch geschoold personeel. Dit maakt internationaal werven een geweldige manier om toptalent aan te nemen en uw bedrijf uit te breiden. Hiervoor heeft u een bedrijfsstructuur nodig waarbij verschillende verantwoordelijkheidslagen ervoor zorgen dat iedereen zijn werk goed doet.',
+        'para-2a': 'Wereldwijd is er echter meer aanbod aan technisch geschoold personeel. Dit maakt internationaal werven een geweldige manier om toptalent aan te nemen en uw bedrijf uit te breiden. Hiervoor heeft u een bedrijfsstructuur nodig waarbij verschillende lagen met verantwoordelijkheden ervoor zorgen dat iedereen zijn werk goed doet.',
         'para-2b': 'Wij zorgen hiervoor!',
         'btn-2': 'Leer meer',
         'head-3': 'Hoe werkt dit?',
@@ -60,7 +60,7 @@ const translations = {
         'last-1': 'Het juiste talent selecteren',
         'last-2': 'Aannemen via lokale wetgeving',
         'last-3': 'Kantoor en management',
-        'foot-para': 'Yourcodingteam is een bedrijf dat gespecialiseerd is in het vinden en begeleiden van talent in offshore landen. Binnen het team ligt de nadruk vooral op het  communiceren van de talenten met de opdrachtgever. Daarnaast moet onder aan de streep onze service koste verminderd zijn en meer marge opleveren voor de klant. Dit peilen we dan ook continue. U zult merken dat u van ons een service krijgt die u niet zou verwachten van het gemiddelde outsourcingsbedrijf.',
+        'foot-para': 'Yourcodingteam is een bedrijf dat gespecialiseerd is in het vinden en begeleiden van talent in offshore landen. Binnen het team ligt de nadruk vooral op het  communiceren van de talenten met de opdrachtgever. Daarnaast moet onder aan de streep onze service koste verminderd zijn en meer marge opleveren voor de klant. U zult merken dat u van ons een service krijgt die u niet zou verwachten van het gemiddelde outsourcingsbedrijf.',
         'foot-link1': './assets/Privacy Statement NL.pdf',
         'foot-link2': './assets/Disclaimer NL.pdf',
     }
@@ -80,14 +80,22 @@ function translate(language) {
 }
 
 // Add an event listener to the language dropdown to listen for changes
+
+// Add an event listener to the language dropdown to listen for changes
 languageDropdown.addEventListener('change', function (event) {
     // Translate the website when a new language is selected
     translate(event.target.value);
+    localStorage.setItem("language", event.target.value);
 });
-let browserLang = navigator.language;
-if (browserLang.includes("nl")) {
+
+let selectedLanguage = localStorage.getItem("language");
+if (selectedLanguage && translations[selectedLanguage]) {
+    translate(selectedLanguage);
+    languageDropdown.value = selectedLanguage;
+} else if (navigator.language.includes("nl")) {
     translate("nl");
-    console.log(browserLang)
+    localStorage.setItem("language", "nl");
 } else {
     translate("en");
+    localStorage.setItem("language", "en");
 }

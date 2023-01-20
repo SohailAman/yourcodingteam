@@ -23,12 +23,12 @@ const translations = {
         'head-3': 'The developer',
         'para-3': 'Our developers are specialized in solving complex problems. They therefore like to take on any challenge and do so with all the dedication and motivation. There is also a focus on sharing knowledge with the customer and building good relationships. At the request of the customer, progress is reported every day. The developer takes full responsibility for the delivered work and results.',
         'head-4': 'We only hire the best.',
-        'para-4a': '- Passionate about his/her profession',
-        'para-4b': '- Excellent technical communication',
-        'para-4c': '- Showing their core skills by our internal developer test.',
-        'para-4d': '- Has an excellent rating from its previous employers or contractors',
-        'para-4e': '- Completed university study related to the job',
-        'para-4f': '- Related working experience (depends on clients wishes)',
+        'para-4a': '• Passionate about his/her profession',
+        'para-4b': '• Excellent technical communication',
+        'para-4c': '• Showing their core skills by our internal developer test.',
+        'para-4d': '• Has an excellent rating from its previous employers or contractors',
+        'para-4e': '• Completed university study related to the job',
+        'para-4f': '• Related working experience (depends on clients wishes)',
 
         'foot-para': 'Yourcodingteam is a company that specializes in finding and guiding talent in offshore countries.Within the team, the emphasis is mainly on having the talents communicate well with the clients. You will therefore receive a service that you would not expect from the average outsourcing company.',
         'foot-link1': './assets/Privacy Statement EN.pdf',
@@ -51,13 +51,13 @@ const translations = {
         'head-3': 'De developer',
         'para-3': 'Onze developers zijn gespecialiseerd in het oplossen van complexe problemen. Zij gaan daarom graag elke uitdaging aan en doen dit met alle toewijding en motivatie. Er wordt daarbij ook gefocust op het delen van kennis met de klant en het opbouwen van goede relaties. Op verzoek van de klant wordt de voortgang elke dag gerapporteerd. De developer neemt volledige verantwoordelijkheid over het aangeleverde werk en resultaten.',
         'head-4': 'Wij nemen alleen de beste aan!',
-        'para-4a': '- Gepassioneerd voor zijn/haar vak',
-        'para-4b': '- Uitstekende technische communicatie',
-        'para-4c': '- Kan zijn/haar kernvaardigheden aantonen in onze development test',
-        'para-4d': '- Heeft een uitstekende beoordeling van vorige werkgevers of opdrachtgevers',
-        'para-4e': '- Afgeronde universitaire studie gerelateerd aan de functie',
-        'para-4f': '- Minimaal 2 jaar+ Relevante werkervaring (afhankelijk van de wensen van de klant)',
-        'foot-para': 'Yourcodingteam is een bedrijf dat gespecialiseerd is in het vinden en begeleiden van talent in offshore landen. Binnen het team ligt de nadruk vooral op het  communiceren van de talenten met de opdrachtgever. Daarnaast moet onder aan de streep onze service koste verminderd zijn en meer marge opleveren voor de klant. Dit peilen we dan ook continue. U zult merken dat u van ons een service krijgt die u niet zou verwachten van het gemiddelde outsourcingsbedrijf.',
+        'para-4a': '• Gepassioneerd voor zijn/haar vak',
+        'para-4b': '• Uitstekende technische communicatie',
+        'para-4c': '• Kan zijn/haar kernvaardigheden aantonen in onze development test',
+        'para-4d': '• Heeft een uitstekende beoordeling van vorige werkgevers of opdrachtgevers',
+        'para-4e': '• Afgeronde universitaire studie gerelateerd aan de functie',
+        'para-4f': '• Minimaal 2 jaar+ Relevante werkervaring (afhankelijk van de wensen van de klant)',
+        'foot-para': 'Yourcodingteam is een bedrijf dat gespecialiseerd is in het vinden en begeleiden van talent in offshore landen. Binnen het team ligt de nadruk vooral op het  communiceren van de talenten met de opdrachtgever. Daarnaast moet onder aan de streep onze service koste verminderd zijn en meer marge opleveren voor de klant. U zult merken dat u van ons een service krijgt die u niet zou verwachten van het gemiddelde outsourcingsbedrijf.',
         'foot-link1': './assets/Privacy Statement NL.pdf',
         'foot-link2': './assets/Disclaimer NL.pdf',
     }
@@ -77,16 +77,22 @@ function translate(language) {
 }
 
 // Add an event listener to the language dropdown to listen for changes
+
+// Add an event listener to the language dropdown to listen for changes
 languageDropdown.addEventListener('change', function (event) {
     // Translate the website when a new language is selected
     translate(event.target.value);
+    localStorage.setItem("language", event.target.value);
 });
-let browserLang = navigator.language;
-if (browserLang.includes("nl")) {
+
+let selectedLanguage = localStorage.getItem("language");
+if (selectedLanguage && translations[selectedLanguage]) {
+    translate(selectedLanguage);
+    languageDropdown.value = selectedLanguage;
+} else if (navigator.language.includes("nl")) {
     translate("nl");
-    console.log(browserLang)
+    localStorage.setItem("language", "nl");
 } else {
     translate("en");
+    localStorage.setItem("language", "en");
 }
-
-

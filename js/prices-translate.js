@@ -20,7 +20,7 @@ const translations = {
         'btn-1': 'See More',
         'para-2': 'The salary in our offshore countries is on average between €1000 and €2000 gross per month. This salary is calculated based on expertise and experience. The employee receives from yourcodingteam the amount per month that you have agreed. In the event of illness or absence, the developer will continue to be paid on his contract terms. This is not passed on to you as a company, so you run the least risk. At Yourcodingteam, the client only pays for the hours worked.',
         'btn-2': 'Get In Touch',
-        'para-3': 'You pay the gross monthly salary multiplied by a conversion factor and yourcoding team arranges the employership. In the illustration you can see what we offer for this.',
+        'para-3': 'You pay the gross monthly salary multiplied by a conversion factor and yourcodingteam arranges the employership. In the illustration you can see what we offer for this.',
         'para-4': ' In each order confirmation is recorded that all intellectual property is transferred to the client. Signing an NDA is also part of the normal procedure.',
         'foot-para': 'Yourcodingteam is a company that specializes in finding and guiding talent in offshore countries.Within the team, the emphasis is mainly on having the talents communicate well with the clients. You will therefore receive a service that you would not expect from the average outsourcing company.',
         'foot-link1': './assets/Privacy Statement EN.pdf',
@@ -39,9 +39,9 @@ const translations = {
         'btn-1': 'Lees meer',
         'para-2': 'Het salaris in onze offshore landen ligt gemiddeld tussen de €1000 en €2000 bruto per maand. Dit salaris wordt berekend op basis van expertise en ervaring. De werknemer ontvangt van yourcodingteam het bedrag per maand dat u heeft afgesproken. Bij ziekte of afwezigheid wordt de developer op zijn contractvoorwaarden doorbetaald. Dit wordt niet naar u als bedrijf doorberekend, waardoor u het minste risico loopt. Bij Yourcodingteam betaald de opdrachtgever alleen de gewerkte uren.',
         'btn-2': 'Neem contact op',
-        'para-3': 'U betaald het bruto maandsalaris keer een omrekeningsfactor en yourcodingteam regelt het werkgeverschap. In de illustratie ziet u wat wij hiervoor bieden.',
-        'para-4': 'In elke opdrachtbevestiging wordt vastgelegd dat alle gecreëerde intellectuele eigendommen worden overgedragen aan de opdrachtgever. Het ondertekenen van een behoort ook tot de normale procedure.',
-        'foot-para': 'Yourcodingteam is een bedrijf dat gespecialiseerd is in het vinden en begeleiden van talent in offshore landen. Binnen het team ligt de nadruk vooral op het  communiceren van de talenten met de opdrachtgever. Daarnaast moet onder aan de streep onze service koste verminderd zijn en meer marge opleveren voor de klant. Dit peilen we dan ook continue. U zult merken dat u van ons een service krijgt die u niet zou verwachten van het gemiddelde outsourcingsbedrijf.',
+        'para-3': 'De illustratie geeft weer welke diensten wij bieden aan u en de developer. U betaald aan ons het brutoloon keer een omrekeningsfactor en yourcodingteam regelt alles.den.',
+        'para-4': 'In elke opdrachtbevestiging wordt vastgelegd dat alle gecreëerde intellectuele eigendommen worden overgedragen aan de opdrachtgever. Het ondertekenen van een NDA behoort ook tot de normale procedure.',
+        'foot-para': 'Yourcodingteam is een bedrijf dat gespecialiseerd is in het vinden en begeleiden van talent in offshore landen. Binnen het team ligt de nadruk vooral op het  communiceren van de talenten met de opdrachtgever. Daarnaast moet onder aan de streep onze service koste verminderd zijn en meer marge opleveren voor de klant. U zult merken dat u van ons een service krijgt die u niet zou verwachten van het gemiddelde outsourcingsbedrijf.',
         'foot-link1': './assets/Privacy Statement NL.pdf',
         'foot-link2': './assets/Disclaimer NL.pdf',
     }
@@ -61,16 +61,22 @@ function translate(language) {
 }
 
 // Add an event listener to the language dropdown to listen for changes
+
+// Add an event listener to the language dropdown to listen for changes
 languageDropdown.addEventListener('change', function (event) {
     // Translate the website when a new language is selected
     translate(event.target.value);
+    localStorage.setItem("language", event.target.value);
 });
-let browserLang = navigator.language;
-if (browserLang.includes("nl")) {
+
+let selectedLanguage = localStorage.getItem("language");
+if (selectedLanguage && translations[selectedLanguage]) {
+    translate(selectedLanguage);
+    languageDropdown.value = selectedLanguage;
+} else if (navigator.language.includes("nl")) {
     translate("nl");
-    console.log(browserLang)
+    localStorage.setItem("language", "nl");
 } else {
     translate("en");
+    localStorage.setItem("language", "en");
 }
-
-
