@@ -634,7 +634,12 @@
     height: 90% !important;
 }
 
-.scrolled .logo1 {
+.logo3 {
+    display: none !important;
+    height: 38px !important;
+}
+
+.scrolled .logo3 {
     display: block !important;
 }
 
@@ -651,6 +656,7 @@
     display: block !important;
 }
 
+.navigation-bar__container.navigation-bar__desktop:hover .logo3,
 .navigation-bar__container.navigation-bar__desktop:hover .logo2 {
     display: none !important;
 }
@@ -808,6 +814,10 @@ header .sm-slider {
 
     .navigation-bar__left-container img {
         height: 70% !important;
+    }
+
+    .navigation-bar__left-container img.logo3 {
+        height: 24px !important;
     }
 
     .navigation-bar__left-container .logo1 {
