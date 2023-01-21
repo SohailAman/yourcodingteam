@@ -43,7 +43,7 @@ const translations = {
         'About Us': 'Over ons',
         'Prices': 'Prijzen',
         'Contact': 'Contact',
-        'head-1': 'We connect your company with the best software developers worldwide!',
+        'head-1': 'Wij connecten uw bedrijf met de beste software developers werelwijd!',
         'para-1': 'Onze offshore teams stellen u in staat om een gekwalificeerde software developer in te huren. De developer zal een werkplek op locatie en alle benodigde kantoorbenodigdheden krijgen. Onze lokale management teams zullen de developer ondersteunen en begeleiden. Wij verzorgen ook de salarisadministratie, naleving van wetgevingen en HR-zaken',
         'btn-1': 'Lees meer',
         'head-2': 'De vraag naar hoogopgeleid technisch personeel in Nederland blijft stijgen.',
